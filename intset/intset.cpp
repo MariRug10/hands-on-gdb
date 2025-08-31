@@ -95,7 +95,7 @@ void IntSet::clear() {
     std::list<node_t*> to_remove;
     to_remove.push_back(root);
 
-    while (!to_remove.empty()) {
+    while (!to_remove.empty()&&root!=nullptr) {
         node_t *current = to_remove.back();
         to_remove.pop_back();
 
